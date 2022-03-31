@@ -30,7 +30,7 @@
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/HealthApp-HCI/HealthApp_HCI"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/HealthApp-HCI/HealthApp_HCI/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/HealthApp-HCI/HealthApp_HCI">View Demo</a>
