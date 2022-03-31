@@ -24,7 +24,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="![Health logo](https://user-images.githubusercontent.com/70248443/161149700-998fe790-d7c7-4b16-86e2-a85594f69068.png)
+" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
