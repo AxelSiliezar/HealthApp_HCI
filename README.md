@@ -20,31 +20,6 @@
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-    <img src="![Health logo](https://user-images.githubusercontent.com/70248443/161149700-998fe790-d7c7-4b16-86e2-a85594f69068.png)
-" alt="Logo" width="80" height="80">
-  
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</div>
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
