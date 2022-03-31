@@ -26,7 +26,7 @@ class SignUpPage extends StatelessWidget {
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(
-                          "img/signup.png"
+                          "img/loginimg.png"
                       ),
                       fit: BoxFit.cover
                   )
@@ -68,7 +68,7 @@ class SignUpPage extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Email",
-                          prefixIcon: Icon(Icons.email, color: Colors.deepOrangeAccent,),
+                          prefixIcon: Icon(Icons.email, color: Colors.blueAccent,),
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
                               borderSide:
@@ -98,7 +98,7 @@ class SignUpPage extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                           hintText: "Password",
-                          prefixIcon: Icon(Icons.password_outlined, color: Colors.deepOrangeAccent,),
+                          prefixIcon: Icon(Icons.password_outlined, color: Colors.blueAccent,),
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
                               borderSide:

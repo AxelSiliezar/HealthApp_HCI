@@ -68,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: TextField(
                     decoration: InputDecoration(
                         hintText: "Email",
-                        prefixIcon: Icon(Icons.email, color: Colors.deepOrangeAccent,),
+                        prefixIcon: Icon(Icons.email, color: Colors.blueAccent,),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
                         borderSide: BorderSide(
@@ -106,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: TextField(
                     decoration: InputDecoration(
                         hintText: "Password",
-                        prefixIcon: Icon(Icons.password, color: Colors.deepOrangeAccent,),
+                        prefixIcon: Icon(Icons.password, color: Colors.blueAccent,),
                         focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30),
                             borderSide: BorderSide(
