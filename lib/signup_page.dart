@@ -26,16 +26,16 @@ class SignUpPage extends StatelessWidget {
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(
-                          "img/loginimg.png"
+                          "img/signup.png"
                       ),
                       fit: BoxFit.cover
                   )
               ),
               child: Column(
                 children: [
-                  SizedBox(height: h*0.16,),
+                  SizedBox(height: h*0.10,),
                   CircleAvatar(
-                    backgroundColor: Colors.white70,
+                    backgroundColor: Colors.grey[300],
                     radius: 60,
                     backgroundImage: AssetImage(
                       "img/profile.png"
@@ -129,7 +129,7 @@ class SignUpPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 70,
+              height: 30,
             ),
             Container(
               width: w * 0.5,
