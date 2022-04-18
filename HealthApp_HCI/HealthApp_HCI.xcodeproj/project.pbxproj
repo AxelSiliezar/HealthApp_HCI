@@ -16,6 +16,9 @@
 		99831DCF280CEF0100EE6559 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DCE280CEF0100EE6559 /* HomeViewController.swift */; };
 		99831DD1280CF5B000EE6559 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DD0280CF5B000EE6559 /* CalendarViewController.swift */; };
 		99831DD3280CF65E00EE6559 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DD2280CF65E00EE6559 /* ProfileViewController.swift */; };
+		99831DD6280D11D000EE6559 /* DailyGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DD5280D11D000EE6559 /* DailyGoalCell.swift */; };
+		99D0155D280D2419008B5366 /* HeadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0155C280D2419008B5366 /* HeadingCell.swift */; };
+		99D01560280D2BB5008B5366 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 99D0155F280D2BB5008B5366 /* Inject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,8 @@
 		99831DCE280CEF0100EE6559 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		99831DD0280CF5B000EE6559 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		99831DD2280CF65E00EE6559 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		99831DD5280D11D000EE6559 /* DailyGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalCell.swift; sourceTree = "<group>"; };
+		99D0155C280D2419008B5366 /* HeadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D01560280D2BB5008B5366 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 		99831DB8280CECBA00EE6559 /* HealthApp_HCI */ = {
 			isa = PBXGroup;
 			children = (
+				99831DD4280D11B400EE6559 /* Cells */,
 				99831DCD280CEE5C00EE6559 /* Views */,
 				99831DB9280CECBA00EE6559 /* AppDelegate.swift */,
 				99831DBB280CECBA00EE6559 /* SceneDelegate.swift */,
@@ -84,6 +91,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		99831DD4280D11B400EE6559 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				99831DD5280D11D000EE6559 /* DailyGoalCell.swift */,
+				99D0155C280D2419008B5366 /* HeadingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +116,9 @@
 			dependencies = (
 			);
 			name = HealthApp_HCI;
+			packageProductDependencies = (
+				99D0155F280D2BB5008B5366 /* Inject */,
+			);
 			productName = HealthApp_HCI;
 			productReference = 99831DB6280CECBA00EE6559 /* HealthApp_HCI.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 99831DAD280CECBA00EE6559;
+			packageReferences = (
+				99D0155E280D2BB5008B5366 /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = 99831DB7280CECBA00EE6559 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,7 +181,9 @@
 				99831DD1280CF5B000EE6559 /* CalendarViewController.swift in Sources */,
 				99831DBE280CECBA00EE6559 /* ViewController.swift in Sources */,
 				99831DBA280CECBA00EE6559 /* AppDelegate.swift in Sources */,
+				99D0155D280D2419008B5366 /* HeadingCell.swift in Sources */,
 				99831DBC280CECBA00EE6559 /* SceneDelegate.swift in Sources */,
+				99831DD6280D11D000EE6559 /* DailyGoalCell.swift in Sources */,
 				99831DCF280CEF0100EE6559 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +346,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "healthapp-hci.HealthApp-HCI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -350,6 +378,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "healthapp-hci.HealthApp-HCI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -380,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99D0155E280D2BB5008B5366 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99D0155F280D2BB5008B5366 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99D0155E280D2BB5008B5366 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99831DAE280CECBA00EE6559 /* Project object */;
 }
