@@ -13,6 +13,9 @@
 		99831DC1280CECBA00EE6559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99831DBF280CECBA00EE6559 /* Main.storyboard */; };
 		99831DC3280CECBD00EE6559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99831DC2280CECBD00EE6559 /* Assets.xcassets */; };
 		99831DC6280CECBD00EE6559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99831DC4280CECBD00EE6559 /* LaunchScreen.storyboard */; };
+		99831DCF280CEF0100EE6559 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DCE280CEF0100EE6559 /* HomeViewController.swift */; };
+		99831DD1280CF5B000EE6559 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DD0280CF5B000EE6559 /* CalendarViewController.swift */; };
+		99831DD3280CF65E00EE6559 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DD2280CF65E00EE6559 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		99831DC2280CECBD00EE6559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99831DC5280CECBD00EE6559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99831DC7280CECBD00EE6559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99831DCE280CEF0100EE6559 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		99831DD0280CF5B000EE6559 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		99831DD2280CF65E00EE6559 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		99831DB8280CECBA00EE6559 /* HealthApp_HCI */ = {
 			isa = PBXGroup;
 			children = (
+				99831DCD280CEE5C00EE6559 /* Views */,
 				99831DB9280CECBA00EE6559 /* AppDelegate.swift */,
 				99831DBB280CECBA00EE6559 /* SceneDelegate.swift */,
-				99831DBD280CECBA00EE6559 /* ViewController.swift */,
 				99831DBF280CECBA00EE6559 /* Main.storyboard */,
 				99831DC2280CECBD00EE6559 /* Assets.xcassets */,
 				99831DC4280CECBD00EE6559 /* LaunchScreen.storyboard */,
 				99831DC7280CECBD00EE6559 /* Info.plist */,
 			);
 			path = HealthApp_HCI;
+			sourceTree = "<group>";
+		};
+		99831DCD280CEE5C00EE6559 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99831DBD280CECBA00EE6559 /* ViewController.swift */,
+				99831DCE280CEF0100EE6559 /* HomeViewController.swift */,
+				99831DD0280CF5B000EE6559 /* CalendarViewController.swift */,
+				99831DD2280CF65E00EE6559 /* ProfileViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99831DD3280CF65E00EE6559 /* ProfileViewController.swift in Sources */,
+				99831DD1280CF5B000EE6559 /* CalendarViewController.swift in Sources */,
 				99831DBE280CECBA00EE6559 /* ViewController.swift in Sources */,
 				99831DBA280CECBA00EE6559 /* AppDelegate.swift in Sources */,
 				99831DBC280CECBA00EE6559 /* SceneDelegate.swift in Sources */,
+				99831DCF280CEF0100EE6559 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
