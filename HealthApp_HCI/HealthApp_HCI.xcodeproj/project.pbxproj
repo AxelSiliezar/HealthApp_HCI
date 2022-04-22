@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99173E792813112A003B5C35 /* HexToColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99173E782813112A003B5C35 /* HexToColor.swift */; };
 		99831DBA280CECBA00EE6559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DB9280CECBA00EE6559 /* AppDelegate.swift */; };
 		99831DBC280CECBA00EE6559 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DBB280CECBA00EE6559 /* SceneDelegate.swift */; };
 		99831DBE280CECBA00EE6559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99831DBD280CECBA00EE6559 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99173E782813112A003B5C35 /* HexToColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HexToColor.swift; path = HealthApp_HCI/Assets/HexToColor.swift; sourceTree = "<group>"; };
 		99831DB6280CECBA00EE6559 /* HealthApp_HCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthApp_HCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99831DB9280CECBA00EE6559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99831DBB280CECBA00EE6559 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		99831DAD280CECBA00EE6559 = {
 			isa = PBXGroup;
 			children = (
+				99173E782813112A003B5C35 /* HexToColor.swift */,
 				99831DB8280CECBA00EE6559 /* HealthApp_HCI */,
 				99831DB7280CECBA00EE6559 /* Products */,
 			);
@@ -182,6 +185,7 @@
 				99831DBE280CECBA00EE6559 /* ViewController.swift in Sources */,
 				99831DBA280CECBA00EE6559 /* AppDelegate.swift in Sources */,
 				99D0155D280D2419008B5366 /* HeadingCell.swift in Sources */,
+				99173E792813112A003B5C35 /* HexToColor.swift in Sources */,
 				99831DBC280CECBA00EE6559 /* SceneDelegate.swift in Sources */,
 				99831DD6280D11D000EE6559 /* DailyGoalCell.swift in Sources */,
 				99831DCF280CEF0100EE6559 /* HomeViewController.swift in Sources */,

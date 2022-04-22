@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         // Do any additional setup after loading the view.
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        func viewDidLayoutSubviews() {
+            super.viewDidLayoutSubviews()
+            
+            flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        }
         
     }
     
@@ -31,14 +38,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             
             cell.headingLabel.text = "Welcome back nerd!"
             cell.subtitleLabel.text = "Today's Goal Progress"
-            cell.backgroundColor = UIColor.orange
+            cell.backgroundColor = UIColor.white
             return cell
         }
         
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DailyGoalCell", for: indexPath) as! DailyGoalCell
             cell.headingLabel.text = "boom"
-            cell.backgroundColor = UIColor.blue
+            cell.backgroundColor = UIColor(hex: "#F0F0F0FF")
             return cell
         }
     }
@@ -46,13 +53,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let height = view.frame.size.height
-        let width = view.safeAreaLayoutGuide.layoutFrame.size.width
-//        let device = UIDevice.current
+        let width = view.safeAreaLayoutGuide.layoutFrame.size.width * 0.9
         
         if indexPath.row == 0 {
             return CGSize(width: width, height: height * 0.2)
         } else {
-            return CGSize(width: width, height: height * 0.22)
+            return CGSize(width: width, height: height * 0.125)
         }
     }
     
