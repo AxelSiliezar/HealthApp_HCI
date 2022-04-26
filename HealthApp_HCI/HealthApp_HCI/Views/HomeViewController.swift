@@ -19,11 +19,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        func viewDidLayoutSubviews() {
-            super.viewDidLayoutSubviews()
-            
-            flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
-        }
+        
         
     }
     

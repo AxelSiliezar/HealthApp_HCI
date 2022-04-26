@@ -110,10 +110,10 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeadingCell" id="oR1-Wq-lfG" customClass="HeadingCell" customModule="HealthApp_HCI" customModuleProvider="target">
-                                        <rect key="frame" x="51" y="0.0" width="312" height="161"/>
+                                        <rect key="frame" x="51" y="0.0" width="312" height="344"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="irn-DI-rdQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="312" height="161"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="312" height="344"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome back, Luis!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-BL-VWE">
@@ -139,13 +139,14 @@
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="312" height="344"/>
                                         <connections>
                                             <outlet property="headingLabel" destination="PIg-BL-VWE" id="XOE-V8-08h"/>
                                             <outlet property="subtitleLabel" destination="dty-Ml-b5w" id="eJs-sm-VrC"/>
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DailyGoalCell" id="tcO-aE-tAx" customClass="DailyGoalCell" customModule="HealthApp_HCI" customModuleProvider="target">
-                                        <rect key="frame" x="51" y="171" width="312" height="113"/>
+                                        <rect key="frame" x="51" y="354" width="312" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xZ9-Fb-90s">
                                             <rect key="frame" x="0.0" y="0.0" width="312" height="113"/>
