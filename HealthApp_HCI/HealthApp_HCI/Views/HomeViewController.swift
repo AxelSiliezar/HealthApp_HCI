@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KDCircularProgress
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -18,8 +19,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         // Do any additional setup after loading the view.
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        
         
     }
     
@@ -35,12 +34,24 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             cell.headingLabel.text = "Welcome back nerd!"
             cell.subtitleLabel.text = "Today's Goal Progress"
             cell.backgroundColor = UIColor.white
+            
+            let height = cell.circularView.frame.size.height
+            let width = cell.circularView.safeAreaLayoutGuide.layoutFrame.size.width
+            let progress = KDCircularProgress(frame: CGRect(x: 0, y: 0, width: width, height: height))
+                    progress.startAngle = -90
+            progress.angle = 240.0
+            progress.set(colors: UIColor.green)
+            progress.clockwise = true
+            progress.roundedCorners = false
+
+            cell.circularView.addSubview(progress)
+
             return cell
         }
         
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DailyGoalCell", for: indexPath) as! DailyGoalCell
-            cell.headingLabel.text = "boom"
+            cell.headingLabel.text = "Running"
             cell.backgroundColor = UIColor(hex: "#F0F0F0FF")
             return cell
         }
@@ -52,7 +63,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         let width = view.safeAreaLayoutGuide.layoutFrame.size.width * 0.9
         
         if indexPath.row == 0 {
-            return CGSize(width: width, height: height * 0.2)
+            return CGSize(width: width, height: height * 0.5)
         } else {
             return CGSize(width: width, height: height * 0.125)
         }

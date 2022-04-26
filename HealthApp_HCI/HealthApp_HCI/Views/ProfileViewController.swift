@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import KDCircularProgress
 
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var circularProgressView: KDCircularProgress!
 
     override func viewDidLoad() {
         super.viewDidLoad()

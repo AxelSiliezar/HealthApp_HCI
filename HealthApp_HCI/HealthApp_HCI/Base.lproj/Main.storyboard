@@ -78,12 +78,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rDK-sQ-365" customClass="KDCircularProgress" customModule="KDCircularProgress">
+                                <rect key="frame" x="87" y="357" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wqO-4u-lly"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="9X5-uB-kJC"/>
                     <connections>
+                        <outlet property="circularProgressView" destination="rDK-sQ-365" id="71O-3d-cEK"/>
                         <outlet property="testLabel" destination="c8D-ji-pkE" id="lOM-Ya-HD9"/>
                     </connections>
                 </viewController>
@@ -130,17 +136,28 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aty-a7-5Uh">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Check In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aty-a7-5Uh">
                                                     <rect key="frame" x="0.0" y="129" width="91" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtR-8d-jUo">
+                                                    <rect key="frame" x="56" y="185" width="200" height="200"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EtR-8d-jUo" firstAttribute="top" secondItem="Aty-a7-5Uh" secondAttribute="bottom" constant="27" id="0HY-eO-CjX"/>
+                                                <constraint firstItem="EtR-8d-jUo" firstAttribute="top" secondItem="irn-DI-rdQ" secondAttribute="top" constant="185" id="54Y-7y-RWI"/>
+                                                <constraint firstAttribute="bottom" secondItem="EtR-8d-jUo" secondAttribute="bottom" constant="-41" id="cDa-fz-Lxy"/>
+                                                <constraint firstItem="EtR-8d-jUo" firstAttribute="leading" secondItem="irn-DI-rdQ" secondAttribute="leading" constant="56" id="hYJ-Kw-yPg"/>
+                                                <constraint firstAttribute="trailing" secondItem="EtR-8d-jUo" secondAttribute="trailing" constant="56" id="oqU-1z-KRO"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="312" height="344"/>
                                         <connections>
+                                            <outlet property="circularView" destination="EtR-8d-jUo" id="mEf-gi-fUD"/>
                                             <outlet property="headingLabel" destination="PIg-BL-VWE" id="XOE-V8-08h"/>
                                             <outlet property="subtitleLabel" destination="dty-Ml-b5w" id="eJs-sm-VrC"/>
                                         </connections>

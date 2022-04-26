@@ -1,0 +1,6 @@
+framework module Pods_HealthApp_HCI {
+  umbrella header "Pods-HealthApp_HCI-umbrella.h"
+
+  export *
+  module * { export * }
+}

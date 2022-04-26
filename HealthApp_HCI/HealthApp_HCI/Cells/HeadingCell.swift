@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import KDCircularProgress
 
 class HeadingCell: UICollectionViewCell {
     
     @IBOutlet weak var headingLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var circularView: UIView!
 }
